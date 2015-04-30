@@ -1,0 +1,610 @@
+<!DOCTYPE HTML>
+<head>
+	<title>Serious Programming</title>
+	<link rel="stylesheet" href="amir-style.css">
+</head>
+<body>
+	<h1>Important Concepts and Languages</h1>
+	<div class="lesson">
+		<h2>Lesson 1: Intro to 'serious' programming</h2>
+		<div class="concept">
+			<div class="concept-title">
+				Computer
+			</div>
+			<div class="concept-description">
+				<p>
+					Most machines like a toaster, or an oven, are designed to do limited things. Unless you physically alter the object, they can only toast bread, or bake a cake, with very limited options such as higher or lower heat.
+				</p>
+				<p>
+					Computers however, are different in that they can be <b>programmed</b> to do anything we want, so long as we can write a program that specifies a <em>very specific set of instructions</em>.
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				Programming Language
+			</div>
+			<div class="concept-description">
+				<p>
+					Programming language is what programmers use to tell a computer what to do. Python is an example of a language. 
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				Python
+			</div>
+			<div class="concept-description">
+				<p>
+					Python is a programming language. When you write code in Python and then 'run' that code, a <b>Python Interpreter</b> converts the code you wrote as a set of instructions that the computer then understands and executes.
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				Grammar
+			</div>
+			<div class="concept-description">	
+				<p>
+					Just as human languages have proper grammer, so does Python, or any programming language. Grammar is specification of what is <em>correct</em> and <em>incorrect</em>.
+				</p>
+				<p>
+					In English for example, people can often make sense of sentences that are not techincally correct, but computers cannot do the same. This mean that we <b>must</b> use proper programming grammar, or write code that is exactly correct according to the interpreter, otherwise the code will not run.
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				Python Expressions
+			</div>
+			<div class="concept-description">
+				<p>
+					A Python 'expression' is a legal Python statement. For example: <span class="code">print 1 + 1</span> is a valide expression, but <span class="code">print 1 +</span> is not, because there is no number at the end.
+				</p>
+				<p>
+					 <a href="https://www.udacity.com/course/viewer#!/c-ud552-nd/l-3527838955/e-48704311/m-48736065" target="_blank">This video</a> does a good job of explaining the Python grammar for "expressions".
+				</p>
+			</div>
+		</div>
+	</div>	
+	<div class="lesson">
+		<h2>Lesson 2: Variables</h2>
+			<div class="concept">
+				<div class="concept-title">
+					Variables 
+				</div>
+				<div class="concept-description">
+					<p>
+						Variables provide a way for programmers to give <em>a name to a value</em>. For instance, if <span class="code">variable_numbers</span> is a variable with the value of <span class="code">2</span> then the following code would print out <span class="code">4</span> <br><br>
+						<span class="code">print variable_number + variable_number</span>
+					</p>
+				</div>
+			</div>
+		<div class="concept">
+			<div class="concept-title">
+				What does it mean to <b>assign value</b> and how do I do it?
+			</div>
+			<div class="concept-description">
+				<p>
+					We can assign any value to any varible so long as it is the correct syntax and the interpreter can understand the code. For instance we can assign the value of 2 to the variable <b>variable_number</b> by writing the following line of code: <br><br>
+					<span class="code">variable_number = 2</span> <br><br>
+					We can even change that value by re-assigning it to a different value later, in turn making the coding process easier since we are only changing one value, rather than an entire line of code.
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				What does the equals ( = ) symbol mean?
+			</div>
+			<div class="concept-description">
+				<p>
+					In the line <span class="code">5 + 5 = 10</span> the equals symbol means exactly that, equals. However in the line of code <span class="code">variable_number = 5</span> the equals symbol means assigned to; think of it as an arrow rather than an equals.
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				How are variables usful?
+			</div>
+			<div class="concept-description">
+				<p>
+					Variables are useful in many ways:
+				</p>	
+					<ol>
+						<li>They improve code readability by using names that make sense to people.</li>
+						<li>They give us a way to store values of important data</li>
+						<li>They allow for quicker coding. We can change the value of a variable to change numerous lines of code at once, vs changing each line of code one by one</li>
+					</ol>	
+			</div>
+		</div>															
+		<div class="concept">
+			<div class="concept-title">
+				Whats the difference?
+			</div>
+			<div class="concept-description">
+				<p>	
+					In <b>Python</b> 2 is a number, while "2" is a string. The code <span class="code">2 + 2</span> would print <b>4</b> while the code <span class="code">"2" + "2"</span> would print <b>"22"</b>.	
+				</p>
+			</div>
+		</div>
+	</div>	
+	<div class="lesson">
+		<h2>Lesson 3: Functions</h2>
+		<div class="concept">
+			<div class="concept-title">
+				What is a function?
+			</div>
+			<div class="concept-description">
+				<p>
+					A function is something that takes an input, does somthing to that input, then produces an output. For example, a function named <b>square</b> may take a number as an input and produce that number squared as an output.
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				Whats the difference between <b>Making</b> and <b>Using</b> a function?
+			</div>
+			<div class="concept-description">
+				<p>
+					Functions are made by lines of code starting with the key word <b>def</b> and then giving a function name followed by the <b>parameters</b> in parentheses. These parameters will eventually be replaced by actual values when the function is called.
+				</p>
+				<p>
+					In the 'body' of the function, we write the code that specifies what do do with the input paramters. i.e: <br><br>
+				</p>	
+					<span class='code'>
+						
+							def square(x):<br>
+							c = x * x<br>
+							return c </span>
+						
+				<p>
+					To use a function, we write the name of the function followed by the value we assing to the parameters in the parentheses:
+					<span class="code"><br>
+						print square(4)<br>
+					>>>16</span>
+				</p>
+			</div>
+		</div>										
+		<div class="concept">
+			<div class="concept-title">
+				How do functions help avoid repetion?
+			</div>
+			<div class="concept-description">
+				<p>
+					Functions are tools that can be created and reused forever. Once a function has been defined, it never has to be re-defined!
+				</p>
+			</div>	
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				What if there is no <b>RETURN</b> statement?
+			</div>
+			<div class="concept-description">
+				<p>
+					The <b>return</b> keyword tells Python exactly what the function needs to produce as the output. If there is no return, then the output will just produce 'None':
+				</p>
+				<span class="code">
+					def add_two(x):<br>
+						answer = x + <br><br>
+
+						new_number = add_two(7)<br>
+						print new_number<br>
+						>>>None</span>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				Concept of Input to Functions to Output
+			</div>
+			<div class="concept-description">
+				<p>
+					Simply put, when you enter something into a computer, or calculator, or microwave, it takes the command you enter, and gives you an output once it has completed a function. In programming, this can be data, strings, lists, etc. Every line of code after the defining function must be indented in the proper block to ensure you get back the correct output. For example:
+				</p>
+				<span class="code">
+						def is_friend(name):<br>
+							return name[0]=='A' or name[0]=='D'</span>
+				<p>
+					I would get the output:
+				</p>
+				<span class="code">
+					print is_friend('Amir')<br>
+					print is_friend('Dani')<br>
+					>>True<br>
+					>>True	
+				</span>
+				<p>
+					These two print statements would output True, because my code asks to return the names that begin with either an uppercase A or D at index 0. If I had input the name Mark, the output would be False as it does not start with either letter we call for at index 0.
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				Using a function
+			</div>
+			<div class="concept-description">
+				<p>
+					You can set procedures by using a def command at the beginning and it will not be used unless it is called upon later in the code. It will lay dormant until a command is set to run that procedure and return its value. To se a procedure, the basic code would be to give it a name like <em>simple_code</em>, and then you would have your input parameter(s) with in parentheses after the name of the code, such as <em>simple_code(n)</em>.
+				</p>
+				<p>
+					There can be as many inputs as needed, so long as they are separated by commas, and later give the correct amount of inputs in your code. 
+				</p>
+				<p>
+					If you are defining a procedure you put def in front of it and a colon at the end, and on the next line you put the function(s) you want to run. It would end up looking like this.
+				</p>	
+				<span class="code">
+					def simple_code(n1,n2):<br>
+						return n1+n2<br>
+					print simple_code(3,5)
+				</span>
+				<p>
+					The result or output of this function would be 8. It is important to remember that there must be an output for the function. If there is no return statement, as we stated before, nothing will come back.
+				</p>
+			</div>
+		</div>
+		<div class="concept">
+			<div class="concept-title">
+				Using Python to generate HTML
+			</div>
+			<div class="concept-description">
+				<p>
+					Here I will show an example of how to create a div block that has an h1 tag with a title that is a variable and content that is a variable as well.
+				</p>
+				<span class="code">
+					def create_html(title,content):<br>
+            		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;html_element_1 = """<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class='box_container'&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class='box_title'&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 class='title'&gt;""" + title + &quot;&lt;/h1&gt;&quot;<br>
+            		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;html_element_2 = """<br>
+            		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;article class='box_content'&gt;<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class='content'&gt;""" + content + &quot;&lt;/p&gt;&quot;<br>
+            		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;html_element_3 = """<br>
+            		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/article&gt;<br>
+            		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;&quot;&quot;&quot;<br>
+            		<br>
+            		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;html_total = html_element_1 + 		html_element_2 + html_element_3<br>
+            		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return html_total<br>
+            		<br>
+            		div_title = 'This is The Title'<br>
+            		div_content = 'This is the content to my article.'<br>
+            		<br>
+            		print create_html(div_title, div_content)<br>
+            	</span>
+            	<p>
+            		The output of this code would be as follows:
+            	</p>
+            	<span class="code">
+            		<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class='box_container'&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class='box_title'&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 class='title'&gt;This is The Title&lt;/h1&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class='box_content'&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class='content'&gt;This is the content to my article.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+      			</span>
+      		</div>
+      	</div>
+      	<div class="concept">
+      		<div class="concept-title">
+      			Using the IF function
+      		</div>
+      		<div class="concept-description">
+      			<p>
+      				To use the if function, you would type <span class="code"> if&nbsp;&lt;expression&gt;&nbsp;</span>	and then below you would have the &lt;block&gt; which will define what code is run if the expression is TRUE. If the expression result is FALSE then it will skip this line of code.
+      			</p>
+      			<p>
+      				With the IF function you can also define and ELSE statement. This means that if your IF statement runs FALSE, it will then go to the ELSE statement and run the line of code there. The ELSE must be on the same indent as the IF.
+      			</p>
+      			<p>
+      				Here is an example of IF and ELSE:
+      			</p>
+      			<span class="code">
+      				def bigger(num_1,num_2):<br>
+            		&nbsp;&nbsp;&nbsp;&nbsp;if num_1 &gt; num_2:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return num_1<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if num_1 &lt; num_2:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return num_2<br>
+            		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:      <br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if num_1 == num_2:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return num_1<br>
+				</span>
+				<p>
+					This code will always return the greater number of the two inputs.
+				</p>
+				<p>
+					If you are telling the code to return a True or False then you must capitalize as shown below:
+				</p>
+				<span class="code">
+					def is_friend(name):<br>
+            		&nbsp;&nbsp;&nbsp;&nbsp;if name[0] == 'D':<br>
+            		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return True<br>
+            		&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+            		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return False	
+            	</span>
+            </div>
+        </div>
+        <div class="concept">
+        	<div class="concept-title">
+        		IF and OR
+        	</div>
+        	<div class="concept-description">
+        		<p>
+        			When IF or OR is called as a function to evaluate two or more expressions, it will stop at the first TRUE expression. For example, if you said, 'Am I 30 or 31', the return statement would be TRUE because it would never actually evaluate if you were 31 or not as it knows at least on of the statements is already true. If you were 31 and asked the same question it would evaluate that 30 is false and still return true.
+        		</p>
+        		<p>
+        			If you need to test both expressions, you may need to just put False in the first to ensure no error in the second as it will not pass the first expression if it returns a true value. It would then have to evaluate the second expression and state if there is an error.
+        		</p>
+        	</div>
+        </div>
+        <div class="concept">
+        	<div class="concept-title">
+        		The MAX command
+        	</div>
+        	<div class="concept-description">
+        		<p>
+        			Working out how to get the biggest number from 3 different inputs can be done easily with the MAX command. It will automatically give you the biggest amount of any iputs. It would be written as:
+        		</p>
+        		<span class="code">
+        			&nbsp;&lt;max&gt;(a,b,c,etc..)&nbsp;
+        		</span>
+        	</div>
+        </div>
+        <div class="concept">
+        	<div class="concept-title">
+        		Loops
+        	</div>
+        	<div class="concept-description">
+        		<p>
+        			A loop is just what is sounds like, a loop of an action that just repeates. We start with the WHILE loop.
+        		</p>
+        		<p>
+        			The WHILE loop starts with an expression that will validate the running of the loop followed by a colon. This is called a <em>test expression</em>. Inside of that we have the block that will run as long as the test expression is true. The difference between this and the IF command, is that once it runs the command will go back to check if the test expression is still true. If it is, the block of code will run again and again and again until the test expression returns a false value.
+        		</p>
+        		<span class="code">
+        			i = 0<br>
+        			while i &lt; 10<br>
+        				&nbsp;&nbsp;&nbsp;&nbsp;print i<br>
+        				&nbsp;&nbsp;&nbsp;&nbsp;i = i + 1<br>
+        		</span>
+        		<p>
+        			This results in the code printing from 0 to 9. Once it gets to 10 it is no longer less than 10, as stated in the code, so the code loop will no longer run. An infinit loop is just like it sounds, it will never find a false value so it will never stop.
+        		</p>
+        	</div>
+        </div>
+        <div class="concept">
+        	<div class="concept-title">
+        		Break Statement
+        	</div>
+        	<div class="concept-description">
+        		<p>
+        			A break statement is a way to stop the loop even when the loop is still returning TRUE. You could stick this in an IF command in the WHILE loop which will check to see if there is a reason to break the process or let it continue. If this IF statement is TRUE and you break the loop, you will then continue the code after the while loop. If the IF statement is false, it will continue to run the code and the loop and will check the IF statement the next time around.
+        		</p>
+        	</div>
+        </div>
+        <div class="concept">
+        	<div class="concept-title">
+        		Debugging!
+        	</div>
+        	<div class="concept-description">
+        		<p>
+        			BUGS! Bugs happen in any and all code. It is inevitable to have an error in code, however DEbugging will help correct these errors. Not all bugs will crash a program which makes it a little harder to spot the bug. Sometimes bugs are as simple as trying to concatinate a string and a value, but sometimes they are more complex and will still return an output, a wrong output.
+        		</p>
+        		<p>
+        			There is strategy to debugging. Follow these steps and get those bugs out:
+        		</p>
+        		<ol>
+        			<li>Examine error messages when programs crash</li>
+        			<li>Work from working example code</li>
+        			<li>Make sure the examples work</li>
+        			<li>Add print statements to your code to fine errors in buggy, working code</li>
+        			<li>Keep and compare old versions of code to new versions</li>
+        		</ol>
+        	</div>
+        </div>
+    </div>   
+    <div class="lesson">
+    	<h2>Lesson 4: Lists</h2>
+    	<div class="concept">
+    		<div class="concept-title">
+    			Lists
+    		</div>
+    		<div class="concept-description">
+    			<p>
+    				The list type is a container that holds a number of other objects, in a given order. The list type implements the sequence protocol, and also allows you to add and remove objects from the sequence.
+    			</p>
+    		</div>
+    	</div>
+    	<div class="concept">
+    		<div class="concept-title">
+    			Nested Lists
+    		</div>
+    		<div class="concept-description">
+    			<p>
+    				Simply put, a nested list, is a list within a list. Again lists can contain any set of expressions. We could have:
+    			</p>
+    			<span class="code">
+    				mixed_up = ['apple', 3, 'brown'] <br><br>
+    				double_mix = ['apple' 3 'brown'['music', 'television']]				
+    			</span>
+    			<p>
+    				The above example shows a list with various expressions, and a nested list, a list within a list. A better example of a nested list would be:
+    			</p>
+    			<span class="code">
+    				beatles = [['John', 1940]]<br>
+    				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;['Paul', 1942]<br>
+    				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;['George', 1943]<br>
+    				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;['Ringo', 1940]]	
+    			</span>
+    			<p>
+    				Each element of this nested list is the name of a Beatle and the year they were born. From here we can call the info we need easily because of the nested list.
+    			</p>
+    			<span class="code">
+    				print beatles[3][0]<br>
+    				>>Ringo<br>
+    				print beatles[3][1]<br>				
+    				>>1940<br>
+    			</span>
+    			<p>
+    				The [3] is the last element in the nest and the [0]	or [1] is the object in that portion of the list.
+    			</p>
+    		</div>
+    	</div>
+    	<div class="concept">
+    		<div class="concept-title">
+    			Mutations
+    		</div>
+    		<div class="concept-description">
+    			<p>
+    				Another difference between lists and strings is <em>Mutation</em>. We can mutate the position value in a list such as:
+    			</p>
+    			<span class="code">
+    				p = ['h','e','l','l','o']<br>
+    				p[0] = 'y'
+    			</span>
+    			<p>
+    				Now instead of printing 'hello' our code will print out 'yello' because we mutated the list so that at index 0 p is now 'y' rather than rewriting the entire code.
+    			</p>
+    		</div>
+    	</div>
+    	<div class="concept">
+    		<div class="concept-title">
+    			Aliasing
+    		</div>
+    		<div class="concept-description">
+    			<p>
+    				Just like with names for humans, Aliasing refers to two names being used for the same thing. For example, James Bond is also known as 007. So if something were to happen to James Bond, it also happens to 007. The same goes for lists. 
+    			</p>
+    			<span class="code">
+    				spy=[0,0,7]<br>
+    				agent=spy<br>
+    				print agent<br>
+    				>>[0,0,7]<br>
+    				print spy<br>
+    				>>[0,0,7]
+    			</span>
+    			<p>
+    				If we change the second value in spy it also changes the second value in agent because agent and spy both refer to the same list.
+    			</p>
+    		</div>
+    	</div>
+    	<div class="concept">
+    		<div class="concept-title">
+    			List Operations
+    		</div>
+    		<div class="concept-description">
+    			<p>
+    				Lists are very powerful and with mutations and aliasing, and other list operations, we can build complex data structures. Here are a few examples of other list operations.
+    			</p>
+    			<ol>
+    				<li>Append</li>
+    				<li>Plus</li>
+    				<li>Len</li>
+    			</ol>
+    			<p>
+    				Append let's add a new element to the end of the list without creating a new list. 
+    				Plus lets us do just as it sounds, add two lists together. It works very similar to the concatination of two strings And finally, the len operator. Len tells us the length of the object we want to know the length of. Len works for both lists and strings. The output for len is the number of elements in the input. Here are some examples of each.
+    			</p>
+    			<span class="code">
+    				APPEND<br><br>
+    				stooges['Moe','Larry','Curly']<br>
+    				stooges.append('Shemp')<br>
+    				stooges['Moe','Larry','Curly','Shemp']<br><br><br>
+    				PLUS<br><br>
+    				[0,1] + [2,3] = [0,1,2,3]<br><br><br>
+    				LEN<br><br>
+    				len([0,1])<br>
+    				>>2<br>
+    				len(['Udacity'])<br>
+    				>>7<br>
+    				len(['a','b',['c']])<br>
+    				>>2
+    			</span>
+    			<p>
+    				If you have a list within a list, len will only output the outer list. So in the last example above, the output is still 2 because len will not recognize the second list inside the first. Also, unlike most indexes, len begins at 1, not 0.
+    			</p>
+    		</div>
+    	</div>
+   		<div class="concept">
+   			<div class="concept-title">
+   				Loops on lists
+   			</div>
+   			<div class="concept-description">
+   				<p>
+   					There are four ways we can use loops with lists; FOR loops, WHILE loops, and two versions of indexing. Here I will show examples of each.
+   				</p>
+   				<span class="code">
+   					def measure_udacity(U):<br>
+   					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = 0<br>
+   					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for e in U:<br>
+   					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if e[0] == 'U'<br>
+   					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;count = count + 1<br>
+   					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return count<br>
+   				</span>
+   				<p>
+   					The above code is a FOR loop and will return the number of the paramter listed next to the defined variable. So if we are looking for names that beging with an uppercase U, the code will return the number of instances the U appears:
+   				</p>
+   				<span class="code">
+   					print measure_udacity(['Umbrella','John','Uncle'])<br>
+   					>>2<br>
+   					print measure_udacity(['Hank','Walt','Jesse'])<br>
+   					>>0
+   				</span>
+   				<p>
+   					Next we will look at an example of a while loop with lists.
+   				</p>
+   				<span class="code">
+   					def find_element(p,t):<br>
+   					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i=0<br>
+   					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;while i&lt;len(p):<br>
+   					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if p[i]==t:<br>
+   					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return i<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i = i+1<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return - 1<br>
+				</span>
+				<p>
+					In the above example we used a WHILE loop that would output a numerical value that shows a match at the index:
+				</p>
+				<span class="code">
+					print find_element(['alpha','beta'],'beta')<br>
+					>>2<br>
+					print find_element([1,2],3)<br>
+					>>-1
+				</span>
+				<p>
+					The output of 2 is that at index position 2 there is a match. In the second print statment there is no match so our output is -1 based on our return statement.
+				</p>
+				<p>
+					Finally we will look at the index method. if the &lt;value&gt; is in the &lt;list&gt; it reurns the first position where the &lt;value&gt; is found. Otherwise it produces an error. the 'in' operator changes the output to a tru false statement. We can use the index function in various ways as seen below. Both will have the same result.
+				</p>
+				<span class="code">
+					def find_element(p,t):<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if t in p:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return p.index(t)<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return - 1<br><br><br>
+					<em>OR</em><br><br><br>
+					def find_element(p,t):<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if t not in p:<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return -1<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return p.index(t)<br>
+				</span>		
+				<p>
+					Both of these codes will have the same output as our while loop above. They will print out the position of where there is a match in the nest and the string. 
+				</p>
+			</div>
+		</div>
+	</div>
+</body>					
+						
+													
+
+
+
+
+
+        																	
+
+
+
+
+
+
+
+
